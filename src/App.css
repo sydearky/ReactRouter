@@ -1,0 +1,512 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  background: #ffee63;
+  height: 10%;
+  min-height: 60px;
+  max-height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label.chill {
+  color: #990000;
+  font-size: 1.5rem;
+  line-height: 60px;
+  padding: 0 10%;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: block;
+  color: #990000;
+  margin: 0;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+.checkbtn {
+  font-size: 2rem;
+  color: #990000;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+nav ul {
+  flex-direction: row;
+  margin: 0;
+  margin-right: 10%;
+  display: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: #990000;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+a.active {
+  color: #ffee63;
+}
+
+a:hover {
+  color: #ffee63;
+  background: #990000;
+  transition: 0.5s;
+}
+
+a.active:hover {
+  background: none;
+  cursor: default;
+  color: #ffee63;
+}
+
+.showcase {
+  /* width: 100%; */
+  height: 500px;
+  background-image: url("./img/background1.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  /* margin: 0 10%; */
+  /* color: #0000; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showcase_header {
+  font-size: 1rem;
+  margin: 1rem;
+  /* text-shadow: 4px 3px 0px rgb(0, 0, 0); */
+  color: #990000;
+  text-shadow: 0px 3px 0px black, 0px 14px 10px rgba(0, 0, 0, 0.15);
+}
+
+.showcase_subheading {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #990000;
+  text-shadow: 0px 3px 0px black, 0px 14px 10px rgba(0, 0, 0, 0.15);
+}
+
+.showcase_cta {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #ff5b00;
+  background-color: #ffee63;
+  border: 5px solid #ff5b00;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.showcase_cta:hover {
+  background: #ff5b00;
+  color: #ffee63;
+  transition: 0.5s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #ff5b00;
+  /* border-bottom: 3px solid #746e6e; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 0.5rem;
+}
+
+.content_item img {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  color: #990000;
+  margin: 12px;
+}
+
+.info p {
+  color: #ff5b00;
+  font-size: 0.8rem;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: url(./img/menu1.jpg) no-repeat center center fixed;
+  background-size: cover; */
+  margin: 0 10%;
+  width: 100%;
+  height: 100%;
+}
+
+h1.menu {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #ff5b00;
+}
+
+.gallerycontainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  column-gap: 2em;
+  row-gap: 0.8em;
+  margin: 0 10%;
+}
+
+.galleryimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.galleryname {
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+  color: #990000;
+}
+
+.galleryinfo {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  color: #ff5b00;
+  padding-bottom: 20px;
+}
+
+.teamcontainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 2em;
+  margin: 0 10%;
+}
+
+.teamimg img {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.teamname {
+  color: #990000;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 0.4rem;
+}
+
+/* .heading1 {
+  margin: 12px;
+  color: #990000;
+} */
+
+.info2 p {
+  font-size: 0.8rem;
+  color: #ff5b00;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  /* background-image: url("img/background2.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: initial;
+}
+
+.footer_header {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ff5b00;
+}
+.open-days {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: #990000;
+}
+
+.time-days {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  color: #990000;
+}
+
+/* .footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  margin: 0 10%;
+} */
+
+.footer2 {
+  /* width: 100%; */
+  /* height: 97px; */
+  /* height: 0;
+  min-height: 60px;
+  max-height: 100px; */
+  background-color: #ffee63;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  color: #990000;
+}
+
+.footer_header2 {
+  padding-top: 3px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  /* padding-top: 5px; */
+}
+
+.footer2 p {
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+/*
+@media (min-wdth: 600px) {
+    .showcase{
+        background-image: url("img/background1.jpg");
+    }
+
+    .showcase_header{
+        font-size: 4rem;
+    }
+
+    .showcase_subheading{
+        font-size: 2rem;
+    }
+
+    .showcase_cta{
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+
+    h1.gallery{
+        font-size: 3rem;
+    }
+
+    .info.heading{
+        font-size: 3rem;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+    }
+}
+*/
+
+@media (min-width: 1000px) {
+  nav ul {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+  .showcase {
+    background-image: url("img/background1.jpg");
+  }
+
+  .showcase_header {
+    font-size: 3.5rem;
+    font-size: bolder;
+    letter-spacing: 15px;
+  }
+
+  .showcase_subheading {
+    font-size: 2.5rem;
+  }
+
+  .showcase_cta {
+    font-size: 1.2rem;
+    padding: 20px 40px;
+  }
+
+  .container {
+    margin: 0 10%;
+  }
+
+  h1.gallery {
+    font-size: 3rem;
+  }
+
+  .galleryname {
+    font-size: 1.5em;
+  }
+
+  .galleryinfo {
+    font-size: 1.2em;
+  }
+
+  .teamimg img {
+    height: 300px;
+  }
+
+  .teamname {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .content_item {
+    margin: 1rem 0 2rem;
+    font-size: 0.6rem;
+  }
+
+  .content_item img {
+    width: 23.33%;
+    height: 40%;
+    padding: 5px;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+  }
+
+  .container2 {
+    display: initial;
+    flex-direction: initial;
+    align-items: initial;
+    text-align: initial;
+    padding: 5% 10% 2% 10%;
+  }
+
+  h1.menu {
+    font-size: 2rem;
+    text-align: center;
+    /* margin: 1rem; */
+    color: #ff5b00;
+    padding-bottom: 3%;
+  }
+
+  .content2 {
+    display: initial;
+    flex-direction: initial;
+    align-items: initial;
+    align-self: auto;
+    text-align: initial;
+    margin: 1rem 0 2rem;
+    font-size: 0.6rem;
+  }
+
+  .info2 {
+    float: left;
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .heading1 {
+    font-size: 1.2rem;
+    color: #990000;
+  }
+
+  .info2 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+
+  .open-days {
+    padding: 2% 0 0 0;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  .time-days {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    height: 500px;
+  }
+
+  .footer_header {
+    font-size: 2.5rem;
+  }
+
+  .footer_header2 {
+    font-size: 1rem;
+  }
+
+  .footer2 p {
+    font-size: 0.8rem;
+  }
+}
